@@ -18,8 +18,9 @@ def remove_strawberry(contacts)
   favorite_ice_creams = []
   contacts.each do | contact_name, data_hash |
     contact_name[:favorite_ice_cream_flavors].each do |flavor|
+      binding.pry
+      
       favorite_ice_creams << flavor
     end
-    binding.pry
   end
 end

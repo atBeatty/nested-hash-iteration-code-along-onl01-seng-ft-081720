@@ -23,4 +23,6 @@ def remove_strawberry(contacts)
       favorite_ice_creams << flavor
     end
   end
+  binding.pry
+  
 end

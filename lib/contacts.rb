@@ -24,4 +24,3 @@ def remove_strawberry(contact_list)
     end
   end
 end
-

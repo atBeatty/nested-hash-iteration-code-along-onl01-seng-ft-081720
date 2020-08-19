@@ -24,6 +24,5 @@ def remove_strawberry(contacts)
     # contact_name[:favorite_ice_cream_flavors].each_with_index do |flavor, index|
 
   end
-  binding.pry
 
 end

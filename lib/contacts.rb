@@ -18,7 +18,7 @@ def remove_strawberry(contacts)
   contacts.each do | contact_name, data |
     contact_name[:favorite_ice_cream_flavors].each_with_index do | flavor, i |
       if flavor == "strawberry"
-        contact_name[:favorite_ice_cream_flavors].delete_at(i)
+        contact_name[:favorite_ice_cream_flavors].delete"strawberry"
       end
     end
   end

@@ -15,8 +15,12 @@ require 'pry'
   # }
 
 def remove_strawberry(contacts)
+  favorite_ice_creams = []
   contacts.each do | contact_name, data_hash |
-    puts contact_name + data_hash
+    contact_name[:favorite_ice_cream_flavors].each do |flavor|
+      favorite_ice_creams << flavor
+    end
+
     # contact_name[:favorite_ice_cream_flavors].each_with_index do |flavor, index|
 
   end

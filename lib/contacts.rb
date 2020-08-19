@@ -14,15 +14,15 @@ require 'pry'
   #   }
   # }
 
-def remove_strawberry(contacts)
-  favorite_ice_creams = []
-  contacts.each do | contact_name, data_hash |
-    contact_name[:favorite_ice_cream_flavors].each do |flavor|
-      binding.pry
+def remove_strawberry(contact_list)
 
-      favorite_ice_creams << flavor
+  contact_list.each do | contact_name, data_hash |
+    data_hash[:favorite_ice_cream_flavors].each_with_index do |flavor, i|
+      if flavor == "strawberry"
+        data_hash[:favorite_ice_cream_flavors].delete_at(i)
+      end
     end
   end
-  binding.pry
-  
 end
+
+remove_strawberry(contacts)
